@@ -4,13 +4,13 @@ Seamlessly combine different programming languages and libs visually.
  
 # Table of contents
 
-- [Intruduction](#introduction)
-  - [What is Algonia](what-is-algonia)
-  - [HelloWorld](helloworld)
+- [Introduction](#introduction)
+  - [What is Algonia](#what-is-algonia)
+  - [Hello World](#hello-world)
 - [Architecture](#architecture)  
-  - [Algonia Engine](algonia-engine)
-  - [Algonia VS](algonia-vs)
-  - [Algonia Engine Bindings](algonia-engine-bindings)
+  - [Algonia Engine](#algonia-engine)
+  - [Algonia VS](#algonia-vs)
+  - [Algonia Engine Bindings](#algonia-engine-bindings)
 
 # Introduction
 ## What is Algonia
