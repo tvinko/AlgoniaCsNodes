@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>Algonia.Cs.Node.Scripting</AssemblyName>
+    <Configurations>Debug;Release;Develop</Configurations>
+	<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	<DefineConstants>TRACE;NETCOREAPP2_0</DefineConstants>
+	<Platforms>AnyCPU;x64</Platforms>
+	<RootNamespace>Algonia.Cs.Node.Scripting</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\implementations\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Implementations\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|AnyCPU'">
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>$(ZENO_PROJ)\Implementations\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'">
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>$(ZENO_PROJ)\Implementations\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis" Version="3.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\Algonia.Cs.Common.csproj" />
+    <ProjectReference Include="..\..\libs\CsScriptCore\Algonia.Cs.ScriptCore.csproj" />
+  </ItemGroup>
+</Project>

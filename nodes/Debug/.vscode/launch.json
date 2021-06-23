@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${env:ZENO_ROOT}\\ZenEngine\\bin\\Debug\\AlgoniaEngine.exe",
+            "args": [],
+            "cwd": "${env:ZENO_ROOT}\\ZenEngine\\",
+            "console": "internalConsole",
+            "stopAtEntry": false,
+            "internalConsoleOptions": "openOnSessionStart"
+        }
+    ]
+}
